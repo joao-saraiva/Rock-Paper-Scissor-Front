@@ -1,17 +1,19 @@
+const socket = io('http://localhost:3000');
 
+socket.on('receivedOption', (data) =>{
+    console.log(data);
+})
+
+socket.on('alreadyChoosed', (data) => {
+    console.log(data);
+})
+
+socket.on('result', (data) => {
+    alert(data.result);
+})
 
 Array.from(document.getElementsByClassName("choice")).forEach(function(element){
     element.addEventListener("click", function(e){
-        axios.post('http://localhost:3000/choices/new', {nome: e.srcElement.id})
-            .then(response => console.log(response.data))
-                .catch(err => console.log(err))
+        socket.emit('selectedOption', {option: e.srcElement.id})
     })
-})
-
-const sendChoice = document.getElementById('send-choice');
-
-sendChoice.addEventListener("click", function(){
-    axios.post('http://localhost:3000/rounds', {nome: "teste"})
-            .then(response => console.log(response.data))
-                .catch(err => console.log(err))
 })
