@@ -1,0 +1,30 @@
+body{
+    margin: 40px;
+    background-color: rgba(24,33,66,255)
+}
+
+.header-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+}
+
+.score{
+    background-color: #fafafa;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.text-score{
+    color: #495493;
+    font-size: 20px;
+}
+
+.actual-score{
+    font-size:  35px;
+    color: #56526a;
+}
