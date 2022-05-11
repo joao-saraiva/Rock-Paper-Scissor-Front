@@ -28,3 +28,43 @@ body{
     font-size:  35px;
     color: #56526a;
 }
+
+section{
+    margin-top: 100px;
+}
+
+.choice{
+    background-color: #fafafa;
+    width: 180px;
+    height: 180px;
+    padding: 25px;
+    margin-right: 5px;
+    border-radius: 70%;
+}
+
+.choice:hover{
+    cursor:pointer;
+}
+
+#rock{
+    border: 20px solid #eda821;
+    box-shadow: 5px 5px #b96f31;
+    box-shadow: inset 5px 6px #a7b2e7;
+}
+
+#paper{
+    border: 20px solid #536efa;
+    box-shadow: 5px 10px #3a59de;
+    box-shadow: inset 5px 6px #a7b2e7;
+}
+
+#scissors{
+    border: 20px solid #dc3854;
+    box-shadow: 5px 10px #9f1636;
+    box-shadow: inset 5px 6px #a7b2e7;
+}
+
+.picks{
+    font-size: 30px;
+    color: #fafafa;
+}
